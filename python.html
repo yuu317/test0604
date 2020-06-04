@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+        <title>Python Game Development</title>
+        <link href="favicon.png" rel="icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+        <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <style type="text/css">
+                span.cls_001 {
+                        font-family: Arial, Microsoft JhengHei;
+                        font-size: 30px;
+                        color: rgb(0, 0, 0);
+                        font-weight: bold;
+                        font-style: normal;
+                        text-decoration: none
+                }
+
+                div.cls_001 {
+                        font-family: Arial, Microsoft JhengHei;
+                        font-size: 30px;
+                        color: rgb(0, 0, 0);
+                        font-weight: bold;
+                        font-style: normal;
+                        text-decoration: none
+                }
+
+                span.cls_002 {
+                        font-family: Arial, Microsoft JhengHei;
+                        font-size: 24px;
+                        color: rgb(50, 50, 50);
+                        font-weight: normal;
+                        font-style: normal;
+                        text-decoration: none
+                }
+
+                div.cls_002 {
+                        font-family: Arial, Microsoft JhengHei;
+                        font-size: 24px;
+                        color: rgb(50, 50, 50);
+                        font-weight: normal;
+                        font-style: normal;
+                        text-decoration: none
+                }
+
+                span.cls_003 {
+                        font-family: Arial, Microsoft JhengHei;
+                        font-size: 20px;
+                        color: rgb(50, 50, 50);
+                        font-weight: normal;
+                        font-style: normal;
+                        text-decoration: none
+                }
+
+                div.cls_003 {
+                        font-family: Arial, Microsoft JhengHei;
+                        font-size: 20px;
+                        color: rgb(50, 50, 50);
+                        font-weight: normal;
+                        font-style: normal;
+                        text-decoration: none
+                }
+        </style>
+</head>
+
+<body>
+        <div
+                style="position:absolute;left:50%;margin-left:-480px;top:0px;width:960px;height:570px;border-style:outset;overflow:hidden">
+                <div style="position:absolute;left:0px;top:0px"></div>
+                <div style="position:absolute;left:30px;top:25px" class="cls_001"><span class="cls_001">Python Game
+                                Development</span></div>
+                <div style="position:absolute;left:30px;top:80px" class="cls_002"><span class="cls_002">程式目標：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:120px" class="cls_003"><span
+                                class="cls_003">以英打遊戲訓練英打速度及準確性</span>
+                </div>
+                <div style="position:absolute;left:30px;top:170px" class="cls_002"><span class="cls_002">主程式邏輯：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:210px" class="cls_003"><span class="cls_003">進入遊戲 → 遊戲開始 →
+                                遊戲結果分析</span>
+                </div>
+                <div style="position:absolute;left:30px;top:260px" class="cls_002"><span class="cls_002">程式設計：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:300px" class="cls_003"><span class="cls_003">遊戲：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:330px" class="cls_003"><span
+                                class="cls_003">程式隨機產生一組（共20個）英文字母以及20個氣球，一個氣球裡各放一個字母。計時50秒，玩家需按照氣球順序輸入英文字母，當一組輸入完畢後會隨機跳出下一組。遊戲結束後，分數計分表會出現精確度、速度、分數以及連續答對次數。之後可以選擇繼續遊戲（按Enter）或離開。</span>
+                </div>
+                <div style="position:absolute;left:30px;top:430px" class="cls_003"><span class="cls_003">視覺設計：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:460px" class="cls_003"><span
+                                class="cls_003">遊戲背景會依照遊戲時間，由白天逐漸轉成黑夜再到白天，共十種亮度，每兩秒變換一次。除了天色改變，還會出現太陽、星星、月亮等。而當分數超過某些特定值時，會出現花草樹木作為獎勵，增加畫面豐富度。顯示英文字母的氣球顏色亦為隨機的。</span>
+                </div>
+
+        </div>
+
+        <div
+                style="position:absolute;left:50%;margin-left:-480px;top:580px;width:960px;height:840px;border-style:outset;overflow:hidden">
+                <div style="position:absolute;left:10px;top:80px">
+                        <img src="pythongame/pythongame-1.png" width=460 height=350></div>
+                <div style="position:absolute;left:490px;top:80px">
+                        <img src="pythongame/pythongame-2.png" width=460 height=350></div>
+                <div style="position:absolute;left:10px;top:450px">
+                        <img src="pythongame/pythongame-3.png" width=460 height=350></div>
+                <div style="position:absolute;left:490px;top:450px">
+                        <img src="pythongame/pythongame-4.png" width=460 height=350></div>
+                <div style="position:absolute;left:30px;top:25px" class="cls_002"><span class="cls_002">遊戲畫面：</span>
+                </div>
+        </div>
+
+        <div
+                style="position:absolute;left:50%;margin-left:-480px;top:1430px;width:960px;height:8080px;border-style:outset;overflow:hidden">
+                <div style="position:absolute;left:10px;top:100px">
+                        <img src="pythongame/pythongame-5.png" width=550 height=700></div>
+                <div style="position:absolute;left:10px;top:840px">
+                        <img src="pythongame/pythongame-6.png" width=550 height=700></div>
+                <div style="position:absolute;left:10px;top:1580px">
+                        <img src="pythongame/pythongame-7.png" width=550 height=410></div>
+                <div style="position:absolute;left:10px;top:2030px">
+                        <img src="pythongame/pythongame-8.png" width=550 height=700></div>
+                <div style="position:absolute;left:10px;top:2770px">
+                        <img src="pythongame/pythongame-9.png" width=440 height=720></div>
+                <div style="position:absolute;left:10px;top:3530px">
+                        <img src="pythongame/pythongame-10.png" width=720 height=780></div>
+                <div style="position:absolute;left:10px;top:4360px">
+                        <img src="pythongame/pythongame-11.png" width=800 height=820></div>
+                <div style="position:absolute;left:10px;top:5240px">
+                        <img src="pythongame/pythongame-12.png" width=830 height=630></div>
+                <div style="position:absolute;left:10px;top:5920px">
+                        <img src="pythongame/pythongame-13.png" width=940 height=350></div>
+                <div style="position:absolute;left:10px;top:6320px">
+                        <img src="pythongame/pythongame-14.png" width=600 height=700></div>
+                <div style="position:absolute;left:10px;top:7080px">
+                        <img src="pythongame/pythongame-15.png" width=490 height=460></div>
+                <div style="position:absolute;left:10px;top:7590px">
+                        <img src="pythongame/pythongame-16.png" width=680 height=480></div>
+
+                <div style="position:absolute;left:30px;top:25px" class="cls_002"><span class="cls_002">程式碼：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:70px" class="cls_003"><span class="cls_003">畫面初始設定：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:810px" class="cls_003"><span class="cls_003">載入元素：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:1550px" class="cls_003"><span class="cls_003">調整元素大小：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:2000px" class="cls_003"><span class="cls_003">主程式：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:2740px" class="cls_003"><span class="cls_003">遊戲流程：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:3500px" class="cls_003"><span
+                                class="cls_003">遊戲介面與操作：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:4330px" class="cls_003"><span
+                                class="cls_003">遊戲進行時顯示之資訊（包括天色改變）：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:5210px" class="cls_003"><span
+                                class="cls_003">遊戲結束後顯示之資訊：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:5890px" class="cls_003"><span
+                                class="cls_003">雖機產生字母與氣球：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:6290px" class="cls_003"><span class="cls_003">日出日落：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:7050px" class="cls_003"><span
+                                class="cls_003">達標獎勵（出現花草樹木）：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:7560px" class="cls_003"><span
+                                class="cls_003">計時器（炸彈）：</span>
+                </div>
+        </div>
+
+        <div
+                style="position:absolute;left:50%;margin-left:-480px;top:9520px;width:960px;height:180px;border-style:outset;overflow:hidden">
+                <div style="position:absolute;left:0px;top:0px"></div>
+                <div style="position:absolute;left:30px;top:25px" class="cls_002"><span class="cls_002">原始程式碼：</span>
+                </div>
+                <div style="position:absolute;left:30px;top:80px" class="cls_003"><span class="cls_003"><a
+                                        href="https://github.com/yuu317/Python-Game-Development/blob/master/semi-final.py"
+                                        target="_blank">https://github.com/yuu317/Python-Game-Development/blob/master/semi-final.py</span>
+
+                </div>
+        </div>
+
+</body>
+
+</html>
