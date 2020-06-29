@@ -22,7 +22,7 @@
   * 設置鍵盤之按鈕，若已按過則 addClass("used")，並由粉紅色轉為灰色
   * 利用 if 迴圈以及條件式 userGuess === randomWord.charAt(i)，逐一判斷玩家所按之字母是否包含在單字中
   * 若有，則將正確的字母由原先與方格相同之顏色改成黑色（此時玩家即可看見該字母），
-  * 若無，則 Hangman 多一筆畫（我將每一步驟的 Hangman 都單獨做成一張圖，並命名為1.JPG、2.JPG ⋯⋯，再使用 $("#hangman").attr("src", "hangman/img/" + wrongGuesses + ".JPG")
+  * 若無，則 Hangman 多一筆畫（我將每一步驟的 Hangman 都單獨做成一張圖，並依序命名為1.JPG、2.JPG、3.JPG ⋯⋯，再使用 $("#hangman").attr("src", "hangman/img/" + wrongGuesses + ".JPG")
   * 每答錯一次，wrongGuesses+=1，當答錯次數達10次（即畫完整個 Hangman），則玩家失敗
   * 每答對一次，goodGuesses+=1，當 goodGuesses.length 與單字長度相同時，則玩家獲勝
   * 遊戲結束後，若點選 Play again 的按鈕，則將網頁導回遊戲首頁，並重新選擇遊戲類別
