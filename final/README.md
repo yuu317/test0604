@@ -2,8 +2,6 @@
 ### 網址：http://yuu317.github.io/final
 ### 專題簡介 Hangman
 
-* 專案執行環境：
-  * 在 head 中加上 "Content-Security-Policy" content="upgrade-insecure-requests">，（因為若在https頁面裡動態引入一http資源（我這裡是引入一個js檔案）會被瀏覽器拒絕，因此加入這段程式碼，將http的不安全請求升級為https。）
 * 遊戲說明：
 > 選擇遊戲類別以後，系統會隨機挑選出一個英文單字，並顯示出與該單字長度相同的方格數。玩家需點選底下的鍵盤按鈕，若所猜的字母有包含在單字內，則該字母會顯示在正確的位置，若無，則 Hangman 多一筆畫。當畫完整個 Hangman（即總共猜錯十次）還尚未猜到單字時，則失敗，反之即成功。
 * 遊戲首頁（進入遊戲前）：
@@ -28,6 +26,9 @@
   * 每答錯一次，wrongGuesses+=1，當答錯次數達10次（即畫完整個 Hangman），則玩家失敗
   * 每答對一次，goodGuesses+=1，當 goodGuesses.length 與單字長度相同時，則玩家獲勝
   * 遊戲結束後，若點選 Play again 的按鈕，則將網頁導回遊戲首頁，並重新選擇遊戲類別
+
+* 專案執行環境：
+  * 在 head 中加上 "Content-Security-Policy" content="upgrade-insecure-requests">，（因為若在https頁面裡動態引入一http資源（我這裡是引入一個js檔案）會被瀏覽器拒絕，因此加入這段程式碼，將http的不安全請求升級為https。）
   
 ### 使用的程式語言
 * HTML
