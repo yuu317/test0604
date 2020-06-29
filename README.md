@@ -1,4 +1,4 @@
-## 前端程式設計HW3_個人履歷頁面
+## 前端程式設計HW3｜個人履歷頁面
 ### 網址：https://yuu317.github.io
 ### Reference:
 Bootstrap template source: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
